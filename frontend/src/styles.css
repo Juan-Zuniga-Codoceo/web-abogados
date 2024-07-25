@@ -1,16 +1,16 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Usar una tipografía similar */
+    font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffff; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto claro para contraste */
+    background-color: #ffffff; /* Blanco */
+    color: #000000; /* Negro */
 }
 
 header {
-    background-color: #1f1f1f; /* Fondo oscuro para el encabezado */
-    color: white;
-    padding: 10px 0;
+    background-color: #ffffff; /* Blanco */
+    color: black;
+    padding: 15px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -26,18 +26,18 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
-    color: white;
+    color: black; /* Letras negras */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #ff4081; /* Color de acento */
+    color: #666666; /* Gris oscuro para el hover */
 }
 
 section {
@@ -48,13 +48,18 @@ section {
 section#hero {
     background: url('./assets/hero-background.jpg') no-repeat center center/cover;
     color: white;
-    padding: 100px 20px;
+    padding: 100px 20px; /* Ajustar el padding para llevar el contenido más arriba */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    height: 80vh; /* Ajustar la altura */
+    position: relative; /* Asegurar que los elementos se posicionen dentro de este contenedor */
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 600px; /* Limitar el ancho del contenido del hero */
+    margin-top: -50px; /* Mover el contenido más arriba */
 }
 
 section#hero h1 {
@@ -67,48 +72,70 @@ section#hero p {
     margin: 0 0 20px;
 }
 
-section#hero button {
-    background-color: #ff4081; /* Color de acento */
+.hero-button {
+    background-color: #000000; /* Negro */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Bajar el botón */
+    display: block; /* Asegurar que el botón sea un bloque */
+    width: fit-content; /* Ajustar el ancho al contenido */
+    margin-left: auto; /* Centrar el botón horizontalmente */
+    margin-right: auto; /* Centrar el botón horizontalmente */
+}
+
+.hero-button:hover {
+    background-color: #333333; /* Gris oscuro para el hover */
+}
+
+.reserve-button-container {
+    text-align: center;
+    margin: 40px 0; /* Margen para separar las secciones */
+}
+
+.reserve-button {
+    background-color: #000000; /* Negro */
+    color: white;
+    border: none;
+    padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-section#hero button:hover {
-    background-color: #e73370;
+.reserve-button:hover {
+    background-color: #333333; /* Gris oscuro para el hover */
 }
 
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
-    background-color: #1f1f1f; /* Fondo oscuro para la sección de servicios */
-    border-radius: 8px;
 }
 
 .service-item {
-    background-color: #2c2c2c; /* Fondo oscuro para los elementos de servicio */
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
     max-width: 300px;
     text-align: center;
 }
 
 .service-item h3 {
     font-size: 24px;
-    margin-top: 10px;
-    color: #ff4081; /* Color de acento para los títulos de los servicios */
+    margin-top: 15px;
+    color: #000000; /* Negro */
 }
 
 .service-item p {
     font-size: 16px;
-    color: #b0b0b0; /* Texto claro para contraste */
+    color: #666666; /* Gris oscuro */
 }
 
 .faq-container {
@@ -116,31 +143,29 @@ section#hero button:hover {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    background-color: #1f1f1f; /* Fondo oscuro para la sección de FAQ */
-    border-radius: 8px;
 }
 
 .faq-item {
-    background-color: #2c2c2c; /* Fondo oscuro para los elementos de FAQ */
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
     text-align: left;
 }
 
 .faq-item h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #ff4081; /* Color de acento para los títulos de FAQ */
+    color: #000000; /* Negro */
 }
 
 .faq-item p {
     font-size: 16px;
-    color: #b0b0b0; /* Texto claro para contraste */
+    color: #666666; /* Gris oscuro */
 }
 
 footer {
-    background-color: #1f1f1f;
+    background-color: #000000; /* Negro */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -152,8 +177,8 @@ footer {
     right: 20px;
     background-color: #25d366;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,55 +186,55 @@ footer {
 }
 
 .whatsapp-button img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #1f1f1f; /* Fondo oscuro para el formulario */
-    padding: 20px;
+   	align-items: center;
+    background-color: white; /* Fondo claro para el formulario */
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form label {
-    margin: 10px 0;
+    margin: 15px 0;
     width: 100%;
     max-width: 500px;
-    color: #e0e0e0; /* Texto claro */
+    color: #000000; /* Negro */
 }
 
 form input, form textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 15px;
+    margin-top: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 4px;
     transition: border-color 0.3s;
-    background-color: #2c2c2c; /* Fondo oscuro para los campos del formulario */
-    color: #e0e0e0; /* Texto claro */
+    background-color: #f9f9f9; /* Fondo claro para los campos del formulario */
+    color: #333333; /* Gris oscuro */
 }
 
 form input:focus, form textarea:focus {
-    border-color: #4a90e2;
+    border-color: #000000; /* Negro */
 }
 
 form button {
-    background-color: #4a90e2;
+    background-color: #000000; /* Negro */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #3a78c2;
+    background-color: #333333; /* Gris oscuro para el hover */
 }
 
 .testimonials-carousel {
@@ -221,8 +246,6 @@ form button:hover {
     gap: 20px;
     padding: 20px;
     scrollbar-width: none; /* Firefox */
-    background-color: #1f1f1f; /* Fondo oscuro para la sección de testimonios */
-    border-radius: 8px;
 }
 
 .testimonials-carousel::-webkit-scrollbar {
@@ -230,10 +253,10 @@ form button:hover {
 }
 
 .testimonial-item {
-    background-color: #2c2c2c; /* Fondo oscuro para los elementos de testimonios */
+    background-color: white; /* Fondo claro para los elementos de testimonios */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
     min-width: 300px;
     max-width: 90%; /* Limitar el ancho máximo */
     scroll-snap-align: center;
@@ -245,10 +268,10 @@ form button:hover {
 }
 
 .testimonial-item img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .testimonial-item blockquote {
@@ -259,6 +282,6 @@ form button:hover {
 
 .testimonial-item cite {
     font-size: 14px;
-    color: #b0b0b0;
+    color: #666666; /* Gris oscuro */
     text-align: center; /* Centrar el texto del citador */
 }

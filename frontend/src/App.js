@@ -9,18 +9,20 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import ReservationPage from './components/ReservationPage';
 import ContactPage from './components/ContactPage';
+import ReserveButton from './components/ReserveButton';
 import './styles.css';
 
 function App() {
     return (
         <Router>
             <Header />
-            <WhatsAppButton /> {/* Mover aquí para que siempre esté visible */}
             <Routes>
                 <Route path="/" element={
                     <>
                         <Hero />
                         <Services />
+                        <ReserveButton /> {/* Botón de Reserva */}
+                        <WhatsAppButton />
                         <Testimonials />
                         <FAQ />
                         <Footer />
