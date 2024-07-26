@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/css/main.b7ac7890.css",
+    "main.js": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/js/main.38be8cf9.js",
+    "static/js/453.8ab44547.chunk.js": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/js/453.8ab44547.chunk.js",
+    "static/media/cliente3.jpg": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/cliente3.abec18cbe807a59285e5.jpg",
+    "static/media/hero-background.jpg": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/hero-background.ef164ce2004534e249e3.jpg",
+    "static/media/cliente2.jpg": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/cliente2.5f4f1816730148153dde.jpg",
+    "static/media/fa-solid-900.ttf": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/cliente1.jpg": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/cliente1.d0430cc0a3cceb24f826.jpg",
+    "static/media/fa-brands-400.ttf": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/Juan-Zuniga-Codoceo/web-abogados.github.io/index.html",
+    "main.b7ac7890.css.map": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/css/main.b7ac7890.css.map",
+    "main.38be8cf9.js.map": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/js/main.38be8cf9.js.map",
+    "453.8ab44547.chunk.js.map": "/Juan-Zuniga-Codoceo/web-abogados.github.io/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7ac7890.css",
+    "static/js/main.38be8cf9.js"
+  ]
+}
