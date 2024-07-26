@@ -68,7 +68,7 @@ section#hero {
 }
 
 .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    background-color: white(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
     padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px); /* Aplicar desenfoque */
@@ -208,28 +208,31 @@ footer {
     margin: 10px 0;
 }
 
-.social-icons {
+.social-icons,
+.contact-social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
 }
 
-.social-icons a {
-    color: white;
+.social-icons a,
+.contact-social-icons a {
+    color: white; /* Asegurar que los iconos de redes sociales sean blancos */
     font-size: 24px;
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
-    color: #ccc;
+.social-icons a:hover,
+.contact-social-icons a:hover {
+    color: #ccc; /* Cambiar a gris claro en hover */
 }
 
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
+    left: 40px; /* Aumenta el margen desde la izquierda */
+    background-color: #000000; /* Fondo negro */
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -330,13 +333,13 @@ form button:hover {
     margin-top: 20px;
 }
 
-.social-icons a {
+.contact-social-icons a {
     color: #000000; /* Negro */
     font-size: 24px;
     transition: color 0.3s;
 }
 
-.social-icons a:hover {
+.contact-social-icons a:hover {
     color: #666666; /* Gris oscuro para el hover */
 }
 
@@ -375,8 +378,8 @@ form button:hover {
 }
 
 .testimonial-item img {
-    width: 70px;
-    height: 70px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     margin-bottom: 15px;
 }

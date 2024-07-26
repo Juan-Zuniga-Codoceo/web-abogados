@@ -1,12 +1,13 @@
 import React from 'react';
-import whatsappIcon from '../assets/whatsapp-icon.png';
+import { FaWhatsapp } from 'react-icons/fa';
+import '../styles/WhatsAppButton.css';
 
 const WhatsAppButton = () => {
     return (
-        <a href="https://wa.me/[tu-numero-de-telefono]" className="whatsapp-button">
-            <img src={whatsappIcon} alt="WhatsApp" />
+        <a href="https://wa.me/1234567890" className="whatsapp-button" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="whatsapp-icon" />
         </a>
     );
-}
+};
 
 export default WhatsAppButton;

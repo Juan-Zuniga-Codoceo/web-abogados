@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ReservationPage from './components/ReservationPage';
 import ContactPage from './components/ContactPage';
 import ReserveButton from './components/ReserveButton';
+import ScrollToTop from './components/ScrollToTop';
 import './styles.css';
 
 function App() {
@@ -24,16 +25,17 @@ function App() {
                         <hr className="divider" />
                         <ReserveButton />
                         <hr className="divider" />
-                        <WhatsAppButton />
                         <Testimonials />
                         <hr className="divider" />
                         <FAQ />
-                        <Footer />
                     </>
                 } />
                 <Route path="/reservar" element={<ReservationPage />} />
                 <Route path="/contacto" element={<ContactPage />} />
             </Routes>
+                <WhatsAppButton />
+                <ScrollToTop />
+                <Footer />
         </Router>
     );
 }

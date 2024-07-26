@@ -25,7 +25,7 @@ const ContactPage = () => {
                     <p>Teléfono: +123 456 789</p>
                     <p>Email: contacto@abogada.com</p>
                     <p>Horario de Atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
-                    <div className="social-icons">
+                    <div className="contact-social-icons">
                         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-facebook-f"></i>
                         </a>
