@@ -6,22 +6,22 @@ import cliente3 from '../assets/cliente3.jpg';
 const Testimonials = () => {
     return (
         <section id="testimonials">
-            <h2>Testimonios</h2>
+            <h1>TESTIMONIOS</h1>
             <div className="testimonials-carousel">
                 <div className="testimonial-item">
                     <img src={cliente1} alt="Cliente 1" />
                     <blockquote>"La mejor abogada, muy profesional."</blockquote>
-                    <cite>- Cliente 1</cite>
+                    <cite>Karla Rodriguez</cite>
                 </div>
                 <div className="testimonial-item">
                     <img src={cliente2} alt="Cliente 2" />
                     <blockquote>"Me ayudó muchísimo en mi caso."</blockquote>
-                    <cite>- Cliente 2</cite>
+                    <cite>Camila Gonzalez</cite>
                 </div>
                 <div className="testimonial-item">
                     <img src={cliente3} alt="Cliente 3" />
                     <blockquote>"Altamente recomendada."</blockquote>
-                    <cite>- Cliente 3</cite>
+                    <cite>Juan Perez</cite>
                 </div>
             </div>
         </section>

@@ -3,7 +3,7 @@ import React from 'react';
 const FAQ = () => {
     return (
         <section id="faq">
-            <h2>Preguntas Frecuentes</h2>
+            <h1>PREGUNTAS FRECUENTES</h1>
             <div className="faq-container">
                 <div className="faq-item">
                     <h3>¿Cuáles son los servicios que ofrece?</h3>

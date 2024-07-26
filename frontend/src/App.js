@@ -21,9 +21,12 @@ function App() {
                     <>
                         <Hero />
                         <Services />
-                        <ReserveButton /> {/* Botón de Reserva */}
+                        <hr className="divider" />
+                        <ReserveButton />
+                        <hr className="divider" />
                         <WhatsAppButton />
                         <Testimonials />
+                        <hr className="divider" />
                         <FAQ />
                         <Footer />
                     </>

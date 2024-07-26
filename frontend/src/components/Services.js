@@ -5,7 +5,7 @@ import { faBalanceScale, faGavel, faHandshake } from '@fortawesome/free-solid-sv
 const Services = () => {
     return (
         <section id="services">
-            <h2>Servicios</h2>
+            <h1>SERVICIOS</h1>
             <div className="services-container">
                 <div className="service-item">
                     <FontAwesomeIcon icon={faBalanceScale} size="3x" />

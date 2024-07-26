@@ -1,3 +1,5 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
 body {
     font-family: 'Lora', serif;
     margin: 0;
@@ -33,33 +35,52 @@ header nav ul li a {
     color: black; /* Letras negras */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px; /* Añadir padding inferior para espacio del subrayado */
 }
 
-header nav ul li a:hover {
-    color: #666666; /* Gris oscuro para el hover */
+header nav ul li a:hover,
+header nav ul li a.active-link {
+    color: #666666; /* Gris oscuro para el hover y enlace activo */
+    border-bottom: 2px solid #000000; /* Subrayado negro para el enlace activo */
 }
 
 section {
-    padding: 60px 20px;
+    padding: 40px 20px; /* Reducir el padding de las secciones */
     text-align: center;
+}
+
+.divider {
+    width: 80%;
+    margin: 20px auto; /* Reducir el margen de las líneas divisorias */
+    border: none;
+    border-top: 2px solid #cacaca; /* Color de la línea */
 }
 
 section#hero {
     background: url('./assets/hero-background.jpg') no-repeat center center/cover;
     color: white;
-    padding: 100px 20px; /* Ajustar el padding para llevar el contenido más arriba */
+    padding: 80px 20px; /* Ajustar el padding para llevar el contenido más arriba */
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 80vh; /* Ajustar la altura */
     position: relative; /* Asegurar que los elementos se posicionen dentro de este contenedor */
 }
 
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Aplicar desenfoque */
+    max-width: 600px; /* Limitar el ancho del contenido */
+    margin-left: 20px; /* Separar un poco del borde izquierdo */
+    text-align: left; /* Alinear texto a la izquierda */
+    position: absolute;
+    left: 20px; /* Ajustar posición a la izquierda */
+}
+
 .hero-content {
-    text-align: center;
-    max-width: 600px; /* Limitar el ancho del contenido del hero */
-    margin-top: -50px; /* Mover el contenido más arriba */
+    text-align: left; /* Alinear texto a la izquierda */
 }
 
 section#hero h1 {
@@ -70,6 +91,14 @@ section#hero h1 {
 section#hero p {
     font-size: 24px;
     margin: 0 0 20px;
+}
+
+.hero-link {
+    text-decoration: none; /* Eliminar el subrayado */
+}
+
+.hero-link button {
+    text-decoration: none; /* Asegurar que el botón no tenga subrayado */
 }
 
 .hero-button {
@@ -83,8 +112,6 @@ section#hero p {
     margin-top: 20px; /* Bajar el botón */
     display: block; /* Asegurar que el botón sea un bloque */
     width: fit-content; /* Ajustar el ancho al contenido */
-    margin-left: auto; /* Centrar el botón horizontalmente */
-    margin-right: auto; /* Centrar el botón horizontalmente */
 }
 
 .hero-button:hover {
@@ -93,7 +120,7 @@ section#hero p {
 
 .reserve-button-container {
     text-align: center;
-    margin: 40px 0; /* Margen para separar las secciones */
+    margin: 20px 0; /* Reducir el margen para separar las secciones */
 }
 
 .reserve-button {
@@ -171,6 +198,33 @@ footer {
     text-align: center;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -193,15 +247,16 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-   	align-items: center;
+    align-items: center;
     background-color: white; /* Fondo claro para el formulario */
-    padding: 30px;
+    padding: 20px; /* Reducir padding */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Ajustar altura */
 }
 
 form label {
-    margin: 15px 0;
+    margin: 10px 0; /* Reducir margen */
     width: 100%;
     max-width: 500px;
     color: #000000; /* Negro */
@@ -209,8 +264,8 @@ form label {
 
 form input, form textarea {
     width: 100%;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 10px; /* Reducir padding */
+    margin-top: 5px; /* Reducir margen */
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -231,10 +286,62 @@ form button {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 10px; /* Añadir margen superior */
 }
 
 form button:hover {
     background-color: #333333; /* Gris oscuro para el hover */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1 1 48%; /* Ajustar para tomar el 48% del ancho */
+}
+
+.contact-card {
+    flex: 1 1 48%; /* Ajustar para tomar el 48% del ancho */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: auto; /* Ajustar altura */
+}
+
+.contact-card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #000000; /* Negro */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #666666; /* Gris oscuro para el hover */
+}
+
+.contact-map {
+    margin-top: 40px;
 }
 
 .testimonials-carousel {
